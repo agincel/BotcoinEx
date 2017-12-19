@@ -51,7 +51,7 @@ let exportedMethods = {
                 displayName: displayName,
                 discordUser: discordUser,
                 telegramUser: telegramUser,
-                cash: 15000.0,
+                cash: 20000.0,
                 portfolio: {},
                 shorts: {},
                 other: {}
