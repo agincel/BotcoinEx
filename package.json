@@ -1,0 +1,28 @@
+{
+  "name": "botcoinex",
+  "version": "1.0.0",
+  "description": "Telegram/Discord hybrid bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agincel/BotcoinEx.git"
+  },
+  "author": "Adam Gincel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agincel/BotcoinEx/issues"
+  },
+  "homepage": "https://github.com/agincel/BotcoinEx#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bot-brother": "^2.1.5",
+    "discord.js": "^11.2.1",
+    "mongodb": "^2.2.33",
+    "node-telegram-bot-api": "^0.29.0",
+    "uuid": "^3.1.0",
+    "yahoo-finance": "^0.3.5"
+  }
+}

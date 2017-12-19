@@ -1,0 +1,4 @@
+discordtoken.txt
+telegramToken.txt
+*.txt
+/node_modules/
