@@ -425,6 +425,6 @@ bot.on('message', async (msg) => {
 
 
 var discordToken = fs.readFileSync("discordtoken.txt", "utf8");
-discordtoken = discordtoken.replace("\n", "");
+discordToken = discordToken.replace("\n", "");
 client.login(discordToken);
 
