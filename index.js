@@ -11,6 +11,7 @@ const userData = require("./user");
 const fs = require("fs");
 
 var telegramToken = fs.readFileSync("telegramToken.txt", "utf8");
+telegramToken = telegramToken.replace("\n", "");
 const bot = new TelegramBot(telegramToken, {polling: true});
 
 const startDate = new Date(); //use to ignore all old messages
@@ -424,5 +425,6 @@ bot.on('message', async (msg) => {
 
 
 var discordToken = fs.readFileSync("discordtoken.txt", "utf8");
+discordtoken = discordtoken.replace("\n", "");
 client.login(discordToken);
 
