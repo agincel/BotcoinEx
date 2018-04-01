@@ -22,7 +22,8 @@ function getSymbol(sym) {
         "BTC": "BTC-USD",
         "GOLD": "XAUUSD=X",
         "ETH": "ETH-USD",
-        "LTC": "LTC-USD"
+        "LTC": "LTC-USD",
+        "DJIA": "^DJI"
     }
     if (map[sym] !== undefined)
         return map[sym];
@@ -293,6 +294,12 @@ async function handleMessage(text, platform, platformObject, args, IDs) {
             console.log(typeof(user.discordUser));
             console.log(typeof(user.telegramUser));
             return await sendMessage(user.displayName + " | " + user.discordUser + " | " + user.telegramUser + " | " + user.cash);
+        }
+
+        if (args[0] == "/pink") {
+        	return await sendMessage("The inferior team.");
+        } else if (args[0] == "/purple") {
+        	return await sendMessage("The superior team.");
         }
 
         if (args[0] == "/help") {
